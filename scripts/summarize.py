@@ -14,6 +14,17 @@ def find_labels(n):
 def migration(tree, labeling):
     return [(find_label(labeling, u), find_label(labeling, v)) for [u, v] in tree]
 
+def weighted_migration(tree, labeling):
+    edge_list = migration(tree, labeling)
+
+    # count the frequency of each edge using Counter
+    edge_counts = collections.Counter(edge_list)
+
+    # create a weighted edge list using the edge counts
+    weighted_edge_list = [[edge[0], edge[1], count] for edge, count in edge_counts.items() if edge[0] != edge[1]]
+
+    return weighted_edge_list
+
 def migration_nodups(tree, labeling):
     return list(set(migration(tree, labeling)))
 
@@ -31,6 +42,11 @@ json_file = sys.argv[1]
 # Open the JSON file and load the data as a Python object
 with open(json_file, 'r') as f:
     data = json.load(f)
+
+for i, solution in enumerate(data['solutions']):
+    tree = solution['tree']
+    labeling = solution['labeling']
+    data['solutions'][i]['migration'] = weighted_migration(tree, labeling)
 
 data['summary'] = {
     'migration': migration_summary(data['solutions'])
