@@ -2,8 +2,8 @@
 .json compression application for converting MACHINA outputs into interpretable inputs for MACHINA-Viz
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
-* [Depenndencies](##Dependencies)
-* [Setup](##Setup)
+* [Depenndencies](#Dependencies)
+* [Setup](#Setup)
 ## Dependencies
 Make sure to have Python3 installed
 ## Setup
