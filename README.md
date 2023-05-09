@@ -5,8 +5,8 @@
 * [Depenndencies](#Dependencies)
 * [Setup](#Setup)
 * [Run](#Run)
-* [Directory Structure](#Directory)
-* [Output Structure](#Output)
+* [Directory](#Directory)
+* [Output](#Output)
 ## Dependencies
 Make sure to have Python3 installed
 ## Setup
