@@ -4,6 +4,9 @@
 ## Table of Contents
 * [Depenndencies](#Dependencies)
 * [Setup](#Setup)
+* [Run](#Run)
+* [Directory Structure](#Directory Stucture)
+* [Output Structure](#Output Structure)
 ## Dependencies
 Make sure to have Python3 installed
 ## Setup
