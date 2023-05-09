@@ -5,8 +5,8 @@
 * [Depenndencies](#Dependencies)
 * [Setup](#Setup)
 * [Run](#Run)
-* [Directory Structure](#Directory-Stucture)
-* [Output Structure](#Output-Structure)
+* [Directory Structure](#Directory)
+* [Output Structure](#Output)
 ## Dependencies
 Make sure to have Python3 installed
 ## Setup
@@ -20,7 +20,7 @@ Simply run the shell script on a directory containing all the output files from 
 ```bash
 ./run.sh <MACHINA output directory>
 ```
-## Directory Structure
+## Directory
 Your directory should have one of the following structures:
 ```
 - Input Directory
@@ -44,7 +44,7 @@ or
     - ...
   - coloring.txt (Optional)
 ```
-## Output Structure
+## Output
 The program will compress the directory into a single json file containing the following format:
 ```
 {
